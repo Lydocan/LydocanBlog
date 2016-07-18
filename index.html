@@ -4,8 +4,18 @@ layout: mainpage
 
 
   <div class="wrapper">
-    <nav>
+    <!-- <nav class="nav">
       <ul>
+      </ul>
+    </nav> -->
+
+    <nav class="category">
+      <ul>
+        {% for cat in site.categories %}
+          <li><a href="{{site.BASE_PATH}}/{{cat[0]}}">{{cat[0]}}
+            <span>{{cat[1].size}}</span>
+          </a></li>
+        {% endfor %}
       </ul>
     </nav>
 
