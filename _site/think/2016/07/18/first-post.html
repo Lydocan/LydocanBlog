@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Lydocan的博客</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../../../assets/stylesheets/styles.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/pygment_trac.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/normalize.css">
+        <script src="../../../../assets/javascripts/main.js"></script>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    </head>
+        <body>
+            <header>
+                <a href="">
+                  <h1>Lydocan's Blog</h1>
+                  <p>思源分享地</p>
+                </a>
+            </header>
+
+            <div id="banner">
+                <div class="banner-inner">
+                <span id="logo"></span>
+
+                <a href="https://github.com/Lydocan/LydocanBlog" class="button"><strong>我的Github链接</strong></a>
+                    <div class="downloads">
+                        <span>Downloads:</span>
+                        <ul>
+                            <li><a href="https://github.com/Lydocan/LydocanBlog/zipball/master" class="button">ZIP</a></li>
+                            <li><a href="https://github.com/Lydocan/LydocanBlog/tarball/master" class="button">TAR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end banner -->
+
+            <div class="wrapper">
+                <section>
+    <h1>我的第一篇博客</h1>
+    <p>
+        <span>   </span>第一次投稿，这次博客是用jekyll在github pages搭建的，由于jekyll是基于
+        ruby开发的引擎，因此还需要在电脑上（windows系统）搭建，还是遇到不少奇怪的
+        问题呢。
+    </p>
+    <p>
+        接下来博客还会在页面布局上做一些修改，至于内容当然也会逐渐奉上，敬请期待~
+    </p>
+    <a href="/index.html">返回主页</a>
+</section>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = "" + window.location.href;
+        this.page.identifier = '20160718firstpost';
+        //this.page.title = '';
+    };
+</script>
+
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                     */
+                    /*
+                    var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() {  // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        
+                        s.src = '//lydocan.disqus.com/embed.js';
+                        
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+        </body>
+</html>

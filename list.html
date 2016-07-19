@@ -1,0 +1,40 @@
+---
+layout: mainpage
+---
+<script type="text/javascript">
+  //获取url中的参数
+  function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
+  }
+
+  var cat = getUrlParam('cat');
+  console.log("category is " + cat);
+  //console.log("site post : " + site.posts);
+</script>
+
+
+
+
+  <div class="wrapper">
+    <!-- <nav class="nav">
+      <ul>
+      </ul>
+    </nav> -->
+
+    <section>
+      {% for post in site.posts %}
+        {% if {{post.categories}} == "think" %}
+          <h2>{{post.title}}</h2>
+          <p><a href="{{ site.baseurl }} {{ post.url }}">{{post.description}}</a></p>
+        {% endif %}
+      {% endfor %}
+    </section>
+
+    <footer>
+      <p><span class="small">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span></p>
+    </footer>
+
+  </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->

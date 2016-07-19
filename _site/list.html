@@ -53,54 +53,36 @@
                 </div>
             </div><!-- end banner -->
 
-              <div class="wrapper">
+            <script type="text/javascript">
+  //获取url中的参数
+  function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
+  }
+
+  var cat = getUrlParam('cat');
+  console.log("category is " + cat);
+  //console.log("site post : " + site.posts);
+</script>
+
+
+
+
+  <div class="wrapper">
     <!-- <nav class="nav">
       <ul>
       </ul>
     </nav> -->
 
-    <nav class="category">
-      <ul>
-        
-          <li><a href="/list.html?cat=think">
-              
-                随想
-              
-              
-            <span>2</span>
-          </a></li>
-        
-          <li><a href="/list.html?cat=game">
-              
-              
-                游戏
-              
-            <span>1</span>
-          </a></li>
-        
-      </ul>
-    </nav>
-
-    <!-- <div class="search">
-        <script>
-          (function() {
-            var cx = '005396502090792639255:1ay0qdj51vg';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-    </div> -->
-
     <section>
-
-        <h2>Greeted!!</h2>
-        <p>分享知识与技术的地方！！</p>
-
+      
+        
+      
+        
+      
+        
+      
     </section>
 
     <footer>
