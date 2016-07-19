@@ -791,6 +791,14 @@ header p {
   background: url(../images/octocat-logo.png);
 }
 
+.search {
+  width: 430px;
+  position: fixed;
+  top: 220px;
+  right: 50%;
+  margin-right: -780px;
+}
+
 section {
   width: 590px;
   padding: 30px 30px 50px 30px;

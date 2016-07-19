@@ -4,18 +4,23 @@ title: 我的第一篇博客
 categories: [blog-build]
 tags: [github-page, jekyll, liquid]
 ---
-<div class="wrapper">
-    <section>
-        <h1>{{ page.title }}</h1>
-        <p>
-            第一次投稿，这次博客是用jekyll在github pages搭建的，由于jekyll是基于
-            ruby开发的引擎，因此还需要在电脑上（windows系统）搭建，还是遇到不少奇怪的
-            问题呢。
-        </p>
-        <p>
-            接下来博客还会在页面布局上做一些修改，至于内容当然也会逐渐奉上，敬请期待~
-        </p>
-        <a href="{{ site.baseurl }}/index.html">返回主页</a>
-    </section>
-</div>
+<section>
+    <h1>{{ page.title }}</h1>
+    <p>
+        第一次投稿，这次博客是用jekyll在github pages搭建的，由于jekyll是基于
+        ruby开发的引擎，因此还需要在电脑上（windows系统）搭建，还是遇到不少奇怪的
+        问题呢。
+    </p>
+    <p>
+        接下来博客还会在页面布局上做一些修改，至于内容当然也会逐渐奉上，敬请期待~
+    </p>
+    <a href="{{ site.baseurl }}/index.html">返回主页</a>
+</section>
 
+<script>
+    var disqus_config = function () {
+        this.page.url = "" + window.location.href;
+        this.page.identifier = '20160718firstpost';
+        //this.page.title = '';
+    };
+</script>

@@ -40,20 +40,49 @@
             </div><!-- end banner -->
 
             <div class="wrapper">
-    <section>
-        <h1>我的第一篇博客</h1>
-        <p>
-            第一次投稿，这次博客是用jekyll在github pages搭建的，由于jekyll是基于
-            ruby开发的引擎，因此还需要在电脑上（windows系统）搭建，还是遇到不少奇怪的
-            问题呢。
-        </p>
-        <p>
-            接下来博客还会在页面布局上做一些修改，至于内容当然也会逐渐奉上，敬请期待~
-        </p>
-        <a href="/index.html">返回主页</a>
-    </section>
-</div>
+                <section>
+    <h1>我的第一篇博客</h1>
+    <p>
+        第一次投稿，这次博客是用jekyll在github pages搭建的，由于jekyll是基于
+        ruby开发的引擎，因此还需要在电脑上（windows系统）搭建，还是遇到不少奇怪的
+        问题呢。
+    </p>
+    <p>
+        接下来博客还会在页面布局上做一些修改，至于内容当然也会逐渐奉上，敬请期待~
+    </p>
+    <a href="/index.html">返回主页</a>
+</section>
 
+<script>
+    var disqus_config = function () {
+        this.page.url = "" + window.location.href;
+        this.page.identifier = '20160718firstpost';
+        //this.page.title = '';
+    };
+</script>
 
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                     */
+                    /*
+                    var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() {  // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        
+                        s.src = '//lydocan.disqus.com/embed.js';
+                        
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
         </body>
 </html>
