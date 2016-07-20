@@ -53,30 +53,52 @@
                 </div>
             </div><!-- end banner -->
 
-              <div class="wrapper">
+            <script type="text/javascript">
+  $(function(){
+    $('.articles-for-the-categories').hide();
+    $('#think').show();
+    $('#nav ul li a').bind('click', function(){
+      // $('#all-tags').css('width','290px');
+      // $('#all-articles').animate({width:'660px'});
+      var tagName = $(this).children('span.cat-name').text();
+      $('.articles-for-the-categories').slideUp();
+      $('#'+tagName).slideDown();
+    });
+  });
+</script>
+
+  <div class="wrapper">
     <!-- <nav class="nav">
       <ul>
       </ul>
     </nav> -->
 
-    <nav class="category">
+    <nav class="category" id="nav">
       <ul>
         
-          <li><a href="/list.html">
+          <li>
+          <a style="cursor:pointer">
+            <span>
               
                 随想
               
-              
+            </span>
+            <span class="cat-name" style="display:none">think</span>
             <span>2</span>
-          </a></li>
+          </a>
+          </li>
         
-          <li><a href="/list.html">
-              
+          <li>
+          <a style="cursor:pointer">
+            <span>
               
                 游戏
               
+            </span>
+            <span class="cat-name" style="display:none">game</span>
             <span>1</span>
-          </a></li>
+          </a>
+          </li>
         
       </ul>
     </nav>
@@ -97,10 +119,70 @@
     </div> -->
 
     <section>
-
-        <h2>Greeted!!</h2>
-        <p>分享知识与技术的地方！！</p>
-
+        <!-- <h2>Greeted!!</h2>
+        <p>分享知识与技术的地方！！</p> -->
+      
+      <div class="articles-for-the-categories" id="think">
+        
+        
+          
+            <article id="article">
+              <div class="article-head">
+                <h3><a href="/think/2016/07/19/say-anything.html">海的女儿</a></h3>
+                <div class="clearfix">
+                  <div class="article-post-time left">
+                    <span>&#8227;</span>
+                    <time pubdate="Jul 19, 2016">Jul 19, 2016</time>
+                  </div>
+                </div>
+              </div>
+              <div class="article-body">
+                <p>节选自《海的女儿》...</p>
+              </div>
+            </article>
+          
+        
+          
+            <article id="article">
+              <div class="article-head">
+                <h3><a href="/think/2016/07/18/first-post.html">我的第一篇博客</a></h3>
+                <div class="clearfix">
+                  <div class="article-post-time left">
+                    <span>&#8227;</span>
+                    <time pubdate="Jul 18, 2016">Jul 18, 2016</time>
+                  </div>
+                </div>
+              </div>
+              <div class="article-body">
+                <p>第一次投稿，这次博客是用jekyll...</p>
+              </div>
+            </article>
+          
+        
+      </div>
+      
+      <div class="articles-for-the-categories" id="game">
+        
+        
+          
+            <article id="article">
+              <div class="article-head">
+                <h3><a href="/game/2016/07/19/game-develop-preview.html">游戏开发的一些想法</a></h3>
+                <div class="clearfix">
+                  <div class="article-post-time left">
+                    <span>&#8227;</span>
+                    <time pubdate="Jul 19, 2016">Jul 19, 2016</time>
+                  </div>
+                </div>
+              </div>
+              <div class="article-body">
+                <p>但是写什么游戏呢？我所想到的，有fps，有rpg...</p>
+              </div>
+            </article>
+          
+        
+      </div>
+      
     </section>
 
     <footer>

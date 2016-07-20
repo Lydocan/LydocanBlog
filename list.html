@@ -11,6 +11,7 @@ layout: mainpage
 
   var cat = getUrlParam('cat');
   console.log("category is " + cat);
+  {% assign curCat = cat %}
   //console.log("site post : " + site.posts);
 </script>
 
@@ -24,9 +25,8 @@ layout: mainpage
     </nav> -->
 
     <section>
-      <!-- {% assign curCat = "game" %} -->
       {% for post in site.posts %}
-        {% if post.categories contains "think" %}
+        {% if post.categories contains cat %}
           <h2>{{post.title}}</h2>
           <p><a href="{{ site.baseurl }} {{ post.url }}">{{post.description}}</a></p>
         {% endif %}
